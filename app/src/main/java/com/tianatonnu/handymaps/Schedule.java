@@ -1,7 +1,5 @@
 package com.tianatonnu.handymaps;
 
-import android.util.Log;
-
 import java.util.ArrayList;
 
 public class Schedule
@@ -13,6 +11,13 @@ public class Schedule
     {
         this.courses = new ArrayList<>();
         this.courseStrings = new ArrayList<>();
+    }
+
+
+    public Schedule(ArrayList<Course> courses, ArrayList<String> courseStrings)
+    {
+        this.courses = courses;
+        this.courseStrings = courseStrings;
     }
 
     public ArrayList<Course> getCourses()
